@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Persons</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+    <th>Person Name</th>
+        <th>Person City</th>
+    </tr>
+    <tr th:each="person : ${persons}">
+        <td th:text="${person.name}"></td>
+        <th th:text="${person.city}"></th>
+    </tr>
+</table>
+<strong><a href="/">Click here to blow up </a></strong>
+</body>
+</html>
